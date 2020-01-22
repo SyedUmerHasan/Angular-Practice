@@ -12,5 +12,7 @@ export class SecondChildComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  mysecondfunction() {
+    console.log('secondchild');
+  }
 }
