@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ThirdChildComponent implements OnInit {
   @Input() data: string;
+  @Input() mainbodyfunction: () => {};
   third = '';
 
   constructor() { }
@@ -16,6 +17,9 @@ export class ThirdChildComponent implements OnInit {
   updateData() {}
   submit() {
     console.log(this.third);
+  }
+  clickme() {
+    this.mainbodyfunction();
   }
 
 }

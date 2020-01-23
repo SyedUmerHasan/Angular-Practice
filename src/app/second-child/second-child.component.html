@@ -1,9 +1,12 @@
-<p>second-child works! {{data}}</p>
-<div *ngIf="data=='two'">{{data}}</div>
-<div class="form-group">
-    <label for="">Second Child data</label>
-    <input type="text" class="form-control" aria-describedby="helpId" placeholder="Second Child data" [(ngModel)]="second" />
-    <small id="helpId" class="form-text text-muted">Help text</small>
+<div *ngIf="data=='two'">
+    <div class="form-group">
+        <label for="">Second Child data</label>
+        <input type="text" class="form-control" aria-describedby="helpId" placeholder="Second Child data" [(ngModel)]="second" />
+        <small id="helpId" class="form-text text-muted">Help text</small>
+        <button type="button" (click)="submit()" class="btn btn-primary"> Submit</button>
+
+    </div>
 </div>
 
-<app-third-child [data]="data" #thirdchild></app-third-child>
+
+<app-third-child [data]="data" #thirdchild [mainbodyfunction]="mainbodyfunction()"></app-third-child>

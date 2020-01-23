@@ -7,7 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SecondChildComponent implements OnInit {
   @Input() data: string;
+  @Input() mainbodyfunction: () => {};
   second = '';
+
 
   constructor() { }
 
@@ -16,4 +18,12 @@ export class SecondChildComponent implements OnInit {
   mysecondfunction() {
     console.log('secondchild');
   }
+  submit() {
+    console.log(this.second);
+  }
+
+  clickme() {
+    this.mainbodyfunction();
+  }
+
 }

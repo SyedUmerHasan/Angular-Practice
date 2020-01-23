@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-body.component.css']
 })
 export class MainBodyComponent implements OnInit {
-  data = 'one';
+  data = 'two';
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  mainbodyfunction(){
+    console.log('mainbodyfunction()');
+  }
 }

@@ -1,8 +1,11 @@
-<p (click)="secondchild.mysecondfunction()">first-child works! {{data}}</p>
-<div *ngIf="data=='one'">{{data}}</div>
-<div class="form-group">
-    <label for="">First Child data</label>
-    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" [(ngModel)]="first">
-    <small id="helpId" class="form-text text-muted">Help text</small>
+<!-- <p (click)="secondchild.mysecondfunction()">first-child works! {{data}}</p> -->
+<div *ngIf="data=='one'">
+    <div class="form-group">
+        <label for="">First Child data</label>
+        <input type="text" class="form-control" [(ngModel)]="first" />
+        <small id="helpId" class="form-text text-muted">Help text</small>
+        <button type="button" (click)="submit()" class="btn btn-primary"> Submit</button>
+
+    </div>
 </div>
 <app-second-child [data]="data" #secondchild></app-second-child>

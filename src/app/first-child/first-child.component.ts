@@ -8,11 +8,17 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class FirstChildComponent implements OnInit {
   @Input() data: string;
+  @Input() mainbodyfunction: () => {};
   first = '';
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  submit() {
+    console.log(this.first);
+  }
+  clickme() {
+    // this.mainbodyfunction();
+  }
 }
