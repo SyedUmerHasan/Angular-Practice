@@ -7,10 +7,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ThirdChildComponent implements OnInit {
   @Input() data: string;
+  third = '';
 
   constructor() { }
 
   ngOnInit() {
+  }
+  updateData() {}
+  submit() {
+    console.log(this.third);
   }
 
 }

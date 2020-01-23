@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-body.component.css']
 })
 export class MainBodyComponent implements OnInit {
-  data = 'This is my data String';
+  data = 'one';
+
   constructor() { }
 
   ngOnInit() {

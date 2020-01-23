@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class FirstChildComponent implements OnInit {
   @Input() data: string;
+  first = '';
 
   constructor() { }
 
